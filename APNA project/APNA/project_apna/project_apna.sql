@@ -50,7 +50,7 @@ INSERT INTO Users (username, password, email, user_type) VALUES
 ('priya_kumar', 'priya@654', 'priya.kumar@example.com', 'employer'),
 ('amit_joshi', 'amit@987', 'amit.joshi@example.com', 'candidate'),
 ('neha_mehta', 'neha@741', 'neha.mehta@example.com', 'employer');
-
+SELECT *FROM Users;
 
 
 
@@ -63,6 +63,7 @@ INSERT INTO CommunityPosts (community_section, post_title, post_content) VALUES
 ('Career', 'Interview Tips', 'Looking for resources to prepare for technical interviews.'),
 ('Jobs', 'Marketing Manager', 'We need a marketing manager for our new campaign. Apply now.'),
 ('Events', 'AI Webinar', 'Attend our webinar on AI trends this Friday at 3 PM.');
+SELECT *FROM CommunityPosts;
 
 
 INSERT INTO SocialLogins (platform, user_id, token, expiration) VALUES
@@ -71,7 +72,7 @@ INSERT INTO SocialLogins (platform, user_id, token, expiration) VALUES
 ('Twitter', 3, 'token789ghi', '2024-12-31 23:59:59'),
 ('LinkedIn', 4, 'token012jkl', '2024-12-31 23:59:59'),
 ('Google', 5, 'token345mno', '2024-12-31 23:59:59');
-
+SELECT *FROM SocialLogins;
 
 
 
@@ -84,7 +85,7 @@ INSERT INTO UserActions (user_id, action_type) VALUES
 (1, 'upload_avatar'),
 (2, 'send_message'),
 (3, 'delete_account');
-
+SELECT *FROM UserActions;
 
 
 INSERT INTO Sessions (user_id, session_start, session_end) VALUES
@@ -96,3 +97,6 @@ INSERT INTO Sessions (user_id, session_start, session_end) VALUES
 (1, '2024-06-02 08:00:00', '2024-06-02 10:00:00'),
 (2, '2024-06-02 09:00:00', '2024-06-02 11:00:00'),
 (3, '2024-06-02 10:00:00', '2024-06-02 12:00:00');
+SELECT *FROM Sessions;
+
+ 
